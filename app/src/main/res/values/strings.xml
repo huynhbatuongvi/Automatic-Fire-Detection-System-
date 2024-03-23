@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Doan2</string>
+    <string name="battery_percentage">Pin: %s%%</string>
+</resources>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="380dp"
+    android:layout_height="wrap_content"
+    android:paddingLeft="21dp"
+    android:paddingRight="21dp"
+    android:paddingBottom="21dp"
+    android:orientation="vertical"
+    android:background="@color/teal_200">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="32dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:id="@+id/txtTitle"
+        android:layout_margin="5dp"
+        android:text="Add Contact"/>
+
+    <EditText
+        android:id="@+id/editName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="11dp"
+        android:background="@color/white"
+        android:hint="Enter Name "
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:padding="11dp" />
+
+    <!--
+        android:hint="Enter Name Room": gợi ý văn bản cần nhập
+        android:inputType="text":dạng giá trị được nhập
+        android:minHeight="48dp":chiều cao tối thiểu của phông chữ
+    -->
+
+ <RelativeLayout
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content">
+     
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content">
+
+         <Button
+             android:layout_weight="0.3"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Cancel"
+             android:id="@+id/btnCancel"
+             android:textSize="20dp"
+             android:layout_marginRight="10dp"
+             android:textStyle="bold"
+             android:layout_gravity="end" />
+
+
+         <Button
+             android:layout_weight="0.3"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Save"
+             android:textSize="20dp"
+             android:layout_marginLeft="10dp"
+             android:id="@+id/btnAdd"
+             android:textStyle="bold"
+             android:layout_gravity="end" />
+
+      <!--
+         android:layout_weight="0.3":tỷ lệ phân chia không gian giữa các phần tử con
+         android:background="@drawable/button_round_color":xác định nguồn hình ảnh để hiển thị
+      -->
+
+         </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>
